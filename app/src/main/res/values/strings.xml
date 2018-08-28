@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">QRCodeScanner</string>
+
+    <string name="prompt_text">QR Code Text: </string>
+    <string name="not_applicable">N/A</string>
+    <string name="camera_button">Open Camera</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="confirm">Confirm</string>
+    <string name="back_press_exit_prompt">Press back again to exit</string>
+
+    <string name="qr_code_confirm_dialog_title">QR Code Captured</string>
+    <string name="camera_error_dialog_title">Camera Error</string>
+    <string name="camera_error_dialog_message">There\'s a problem with the camera, please try again.</string>
 </resources>

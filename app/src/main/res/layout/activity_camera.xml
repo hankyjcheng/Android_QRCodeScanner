@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <FrameLayout
+        android:id="@+id/frame_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#000000">
+
+        <TextureView
+            android:id="@+id/camera_preview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <ImageButton
+            android:id="@+id/cancel_button"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            android:background="?android:selectableItemBackground"
+            android:contentDescription="@string/cancel"
+            android:src="@drawable/ic_cancel_24dp"/>
+
+        <com.hankyjcheng.qrcodescanner.activity.camera.FocusSquareView
+            android:id="@+id/focus_square"
+            android:layout_width="0dp"
+            android:layout_height="0dp"/>
+
+    </FrameLayout>
+
+</layout>
