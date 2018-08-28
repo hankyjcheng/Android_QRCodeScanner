@@ -1,13 +1,12 @@
 package com.hankyjcheng.qrcodescanner.activity.main;
 
 import android.app.Activity;
-import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.databinding.DataBindingUtil;
+import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
@@ -15,6 +14,7 @@ import android.widget.Toast;
 import com.hankyjcheng.qrcodescanner.R;
 import com.hankyjcheng.qrcodescanner.activity.camera.CameraActivity;
 import com.hankyjcheng.qrcodescanner.databinding.ActivityMainBinding;
+import com.hankyjcheng.qrcodescanner.util.Utils;
 
 import static com.hankyjcheng.qrcodescanner.activity.camera.CameraActivity.INTENT_EXTRA_QR_CODE;
 import static com.hankyjcheng.qrcodescanner.activity.camera.CameraActivity.INTENT_EXTRA_SUCCESS;
@@ -40,7 +40,12 @@ public class MainActivity extends AppCompatActivity {
         binding.cameraButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                launchCameraActivity();
+                if (Utils.checkCameraHardware(getApplicationContext())) {
+                    launchCameraActivity();
+                }
+                else {
+                    Toast.makeText(MainActivity.this, R.string.camera_not_available, Toast.LENGTH_SHORT).show();
+                }
             }
         });
     }

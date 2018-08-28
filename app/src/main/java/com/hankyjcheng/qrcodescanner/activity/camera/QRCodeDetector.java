@@ -21,6 +21,7 @@ import java.util.List;
 public class QRCodeDetector {
 
     public interface QRCodeDetectorCallback {
+
         void onSuccess(String code);
 
         void onFailure();

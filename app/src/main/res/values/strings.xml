@@ -8,6 +8,7 @@
     <string name="cancel">Cancel</string>
     <string name="confirm">Confirm</string>
     <string name="back_press_exit_prompt">Press back again to exit</string>
+    <string name="camera_not_available">Camera Not Available</string>
 
     <string name="qr_code_confirm_dialog_title">QR Code Captured</string>
     <string name="camera_error_dialog_title">Camera Error</string>

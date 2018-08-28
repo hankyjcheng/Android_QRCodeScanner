@@ -340,7 +340,7 @@ public class CameraActivity extends AppCompatActivity {
     }
 
     /**
-     * Begin to take photo every second, with an initial delay of 2 seconds.
+     * Begin to take photo every 300 millisecond, with an initial delay of 2 seconds.
      */
     private void beginCapture() {
         photoTimer.scheduleAtFixedRate(new TimerTask() {
